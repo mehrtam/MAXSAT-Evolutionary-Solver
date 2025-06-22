@@ -16,21 +16,11 @@ MAXSAT_Solver.ipynb – Exercises 1–3, optimized and baseline solvers
 
 MAXSAT_Parameter_Study.ipynb – Parameter experiments and boxplots
 
-data/
+data:3col80_5_2.shuffled.cnf.wcnf
 
-3col80_5_2.shuffled.cnf.wcnf
 
-results/
 
-maxsat_experiment_results.csv
-
-maxsat_boxplot.png
-
-README.md
-
-requirements.txt
-
-Notebook Descriptions:
+**Notebook Descriptions:**
 
 MAXSAT_Solver.ipynb:
 Implements the evolutionary algorithm with two versions:
@@ -40,7 +30,7 @@ Optimized using NumPy and Numba for fast clause satisfaction
 Baseline version for comparison
 Includes clause parsing, population initialization, fitness evaluation, crossover, mutation, and elitism.
 
-MAXSAT_Parameter_Study.ipynb:
+*MAXSAT_Parameter_Study.ipynb:*
 Runs experiments to test the effect of:
 
 Population size: 10, 30, 50, 100
@@ -50,9 +40,9 @@ Mutation rate: 0.001, 0.01, 0.05, 0.1
 Time budget: 1, 5, 10, 30 seconds
 Each setting is tested across 100 repetitions. Results are saved to CSV and plotted with Seaborn boxplots.
 
-Output Format:
+**Output Format:**
 
-Each run returns:
+*Each run returns:*
 t nsat xbest
 Where:
 
@@ -62,7 +52,7 @@ nsat = number of satisfied clauses
 
 xbest = best assignment found
 
-Requirements:
+*Requirements:*
 
 numpy
 
@@ -74,15 +64,10 @@ seaborn
 
 numba
 
-Install with:
 
-pip install -r requirements.txt
 
-References:
 
-MAXSAT Benchmark: http://maxsat.ia.udl.cat/benchmarks/
 
-WDIMACS Format Specification
 
 Author:
 
